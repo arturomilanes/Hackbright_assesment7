@@ -1,0 +1,30 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push(): 8.4256 ms
+Time to run code with unshift(): 1.9663262000000001 s
+
+Large Array
+-----------
+Time to run code with push(): 887.9 μs
+Time to run code with unshift(): 22.1685 ms
+
+Medium Array
+------------
+Time to run code with push(): 76.8 μs
+Time to run code with unshift(): 252.1 μs
+
+Small Array
+-----------
+Time to run code with push(): 28.1 μs
+Time to run code with unshift(): 25.2 μs
+
+Tiny Array
+----------
+Time to run code with push(): 212.2 μs
+Time to run code with unshift(): 72.5 μs
+
+The pattern is that unshift seams to scale better when run the tiny and small Array.
+However, when we run the medium, large and extra large arrays, push scales better.
